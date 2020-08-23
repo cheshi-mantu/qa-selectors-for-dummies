@@ -15,18 +15,25 @@ div {
     width: 50%;
 }
 
-.highlevel {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-}
-
 #i_m_different {
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#outer_div {
+    background-color: lightcyan;
+    padding: 35px;
+}
+
+#my_message {
+    padding: 40px;
+    margin: 40px;
+    width: 50%;
+    text-align-last: center;
+}
+
 .equal {
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     visibility: visible;
 }
@@ -61,14 +68,11 @@ a:hover {
     background-color: cyan;
 }
 
-#outer_div {
-    background-color: lightcyan;
-    padding: 35px;
+.highlevel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
-#my_message {
-    padding: 40px;
-    margin: 40px;
-    width: 50%;
-    text-align-last: center;
+.button_violet_dashed {
+    border: 1px dashed blueviolet;
 }

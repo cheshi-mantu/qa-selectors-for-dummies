@@ -76,3 +76,9 @@ a:hover {
 .button_violet_dashed {
     border: 1px dashed blueviolet;
 }
+
+.form_container {
+    width: 40%;
+    margin: 40px;
+    padding: 30px;
+}

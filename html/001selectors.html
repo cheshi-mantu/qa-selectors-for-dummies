@@ -5,9 +5,14 @@
     <title>Page title</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        function whatHaveYouDone(clicked_object) {
-            var message = "You clicked tag: " + clicked_object.tagName + " with id= " + clicked_object.id + " and class = " + clicked_object.className;
-            document.getElementById('my_message').innerHTML = message;
+        function whatHaveYouDone(clickedObject) {
+            var message = "You clicked tag: " + clickedObject.tagName + " with id= " + clickedObject.id + " and class = " + clickedObject.className;
+            document.getElementById('my_message').innerHTML = message + " with text: " + clickedObject.innerHTML;
+            //document.write(message + " " + clickedObject.innerHTML);
+        }
+
+        function switchInputs(clickedElement) {
+
         }
     </script>
 
@@ -33,25 +38,25 @@
     <div id="outer_div">
         <div class="div_flex">
             <div class="div_flex_inner" onclick="whatHaveYouDone(this)">
-                <p>Data 1</p>
+                <p>Data 1-1</p>
             </div>
             <div class="div_flex_inner" onclick="whatHaveYouDone(this)">
-                <p>Data 2</p>
+                <p>Data 1-2</p>
             </div>
             <div class="div_flex_inner diff" onclick="whatHaveYouDone(this)">
-                <p>Data 3</p>
+                <p>Data 1-3</p>
             </div>
 
         </div>
         <div class="div_flex">
             <div class="div_flex_inner diff" onclick="whatHaveYouDone(this)">
-                <p>Data 11</p>
+                <p>Data 2-1</p>
             </div>
             <div class="div_flex_inner" onclick="whatHaveYouDone(this)">
-                <p>Data 21</p>
+                <p>Data 2-2</p>
             </div>
             <div class="div_flex_inner diff" onclick="whatHaveYouDone(this)">
-                <p>Data 31</p>
+                <p>Data 2-3</p>
             </div>
 
         </div>
@@ -63,6 +68,16 @@
     <div id="my_message">
         <h3>Watch here</h3>
     </div>
+    <div class="form_container">
+        <form>
+            <input type="checkbox" id="enabler" value="I'm ready for everything">
+            <label for="enabler">I'm ready for everything</label><br>
+            <label for="login_name">Your login:</label><br>
+            <input type="text" id="login" name="login" disabled><br>
+            <label for="secret">Password:</label><br>
+            <input type="password" id="secret" name="lname" disabled>
+
+          </form>    </div>
 </body>
 
 </html>

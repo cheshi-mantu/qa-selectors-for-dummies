@@ -1,0 +1,74 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+div {
+    border: 1px solid red;
+    width: 50%;
+}
+
+.highlevel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#i_m_different {
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.equal {
+    font-family: sans-serif;
+    font-style: normal;
+    visibility: visible;
+}
+
+a:hover {
+    font-size: large;
+}
+
+.div_flex {
+    display: inline-flex;
+    border: 1px solid blue;
+    width: 90%;
+}
+
+.div_flex_inner {
+    padding=10px;
+    border: 2px dashed green;
+    text-align-last: center;
+    background-color: cornsilk;
+    margin: 10px;
+}
+
+.div_flex_inner:hover {
+    background-color: crimson;
+}
+
+.diff {
+    background-color: gold;
+}
+
+.div_flex_inner.diff:hover {
+    background-color: cyan;
+}
+
+#outer_div {
+    background-color: lightcyan;
+    padding: 35px;
+}
+
+#my_message {
+    padding: 40px;
+    margin: 40px;
+    width: 50%;
+    text-align-last: center;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 onclick="document.getElementById('my_message').innerHTML = 'Heading 1 clicked'">This is a Heading 1</h1>
+    <h2 onclick="document.getElementById('my_message').innerHTML = 'Heading 2 clicked'">This is a Heading 2</h2>
+    <h3 onclick="document.getElementById('my_message').innerHTML = 'Heading 3 clicked'">This is a Heading 3</h3>
+    <h4 onclick="document.getElementById('my_message').innerHTML = 'Heading 4 clicked'">This is a Heading 4</h4>
+    <h5 onclick="document.getElementById('my_message').innerHTML = 'Heading 5 clicked'">This is a Heading 5</h5>
+    <h6 onclick="document.getElementById('my_message').innerHTML = 'Heading 6 clicked'">This is a Heading 6</h6>
+
+    <p>This is a paragraph.</p>
+    <div class=" highlevel">
+        <p> paragraph inside div with class highlevel</p>
+        <div id="i_m_different"> div inside div with class highlevel but with id i_m_different</div>
+    </div>
+
+    <div class="equal"><a href="#" onclick="document.getElementById('my_message').innerHTML = 'You just clicked the link'">this usual clickable link</a></div>
+    <div><a href="#" onclick="document.getElementById('my_message').innerHTML = 'You just clicked the link'">this usual clickable link</a></div>
+
+    <div id="outer_div">
+        <div class="div_flex">
+            <div class="div_flex_inner" onclick="document.getElementById('my_message').innerHTML = 'Data 1 is clicked'">
+                <p>Data 1</p>
+            </div>
+            <div class="div_flex_inner" onclick="document.getElementById('my_message').innerHTML = 'Data 2 is clicked'">
+                <p>Data 2</p>
+            </div>
+            <div class="div_flex_inner diff" onclick="document.getElementById('my_message').innerHTML = 'Data 3 is clicked'">
+                <p>Data 3</p>
+            </div>
+
+        </div>
+        <div class="div_flex">
+            <div class="div_flex_inner diff" onclick="document.getElementById('my_message').innerHTML = 'Data 11 is clicked'">
+                <p>Data 11</p>
+            </div>
+            <div class="div_flex_inner" onclick="document.getElementById('my_message').innerHTML = 'Data 12 clicked'">
+                <p>Data 21</p>
+            </div>
+            <div class="div_flex_inner diff" onclick="document.getElementById('my_message').innerHTML = 'Data 13 is clicked'">
+                <p>Data 31</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="div_flex_inner">
+        <button type="button" id="click_me" onclick="document.getElementById('my_message').innerHTML = 'You just clicked the button with id= ' + this.id">Click me</input>
+    </div>
+    <div id="my_message">
+        <h3>Watch here</h3>
+    </div>
+</body>
+
+</html>

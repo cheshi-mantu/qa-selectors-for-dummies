@@ -28,8 +28,9 @@ div {
 #my_message {
     padding: 40px;
     margin: 40px;
-    width: 50%;
+    width: 40%;
     text-align-last: center;
+    float: right;
 }
 
 .equal {

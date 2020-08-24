@@ -21,13 +21,13 @@ class QaSelectorsTests extends TestBase {
     @DisplayName("Open page click H1")
     void pageOpenH1Click() {
         step ("Open html page", () -> open(htmlFilePath));
-//        if (webUrl != null) {
-//
-//            step("Login to jenkins", () -> {
-//                $("#j_username").setValue(LoadCredentialsHelper.getCredentialsFromJson("jenkins.secret", "j_username"));
-//                $(byName("j_password")).setValue(LoadCredentialsHelper.getCredentialsFromJson("jenkins.secret", "j_password")).pressEnter();
-//        });
-//        }
+        if (webUrl != null) {
+
+            step("Login to jenkins", () -> {
+                $("#j_username").setValue(LoadCredentialsHelper.getCredentialsFromJson("jenkins.secret", "j_username"));
+                $(byName("j_password")).setValue(LoadCredentialsHelper.getCredentialsFromJson("jenkins.secret", "j_password")).pressEnter();
+        });
+        }
 
         step("Locate H1 and click", () -> {
             $("h1.black").click();

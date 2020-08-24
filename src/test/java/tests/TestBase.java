@@ -44,7 +44,6 @@ public class TestBase {
             step("Login to jenkins", () -> {
                 $(byName("j_username")).val(jUserName);
                 $(byName("j_password")).val(jPassword).pressEnter();
-                System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src 'self'; img-src 'self' data: *; style-src 'self' 'unsafe-inline'; child-src 'self'; frame-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self'");
             });
         }
     }

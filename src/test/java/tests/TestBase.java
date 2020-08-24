@@ -12,7 +12,7 @@ import java.io.File;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 import static helpers.AttachmentsHelper.*;
 import static helpers.DriverHelper.*;
-import static helpers.Environment.isVideoOn;
+import static helpers.Environment.*;
 
 public class TestBase {
     static String htmlFilePath = "";
@@ -21,8 +21,13 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         configureSelenide();
         Configuration.startMaximized = true;
-        File htmlFile = new File(Environment.url);
-        htmlFilePath = htmlFile.getAbsolutePath();
+        if (isRemoteDriver) {
+            htmlFilePath = url;
+        } else {
+            File htmlFile = new File(Environment.url);
+            htmlFilePath = htmlFile.getAbsolutePath();
+        }
+
     }
     @AfterEach
     public void afterEach(){

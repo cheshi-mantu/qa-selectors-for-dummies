@@ -50,7 +50,7 @@ a:hover {
 }
 
 .div_flex_inner {
-    padding=10px;
+    padding: 10px;
     border: 2px dashed green;
     text-align-last: center;
     background-color: cornsilk;
@@ -82,4 +82,12 @@ a:hover {
     width: 40%;
     margin: 40px;
     padding: 30px;
+}
+
+.black {
+    color: black;
+}
+
+h1.black {
+    font-style: italic;
 }

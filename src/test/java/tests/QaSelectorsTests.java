@@ -6,6 +6,7 @@ import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byLinkText;
 import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -21,9 +22,8 @@ class QaSelectorsTests extends TestBase {
     @DisplayName("Open page click H1")
     void pageOpenH1Click() {
         step ("Open html page", () -> open(htmlFilePath));
-
         step("Locate H1 and click", () -> {
-            $("h1.black").click();
+            $("h1").shouldNotHave(text("but different")).click();
         });
         step("Check", () -> {
             $("#my_message").shouldHave(text("tag: H1"));

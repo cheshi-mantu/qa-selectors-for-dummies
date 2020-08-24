@@ -41,8 +41,8 @@ public class TestBase {
                 open(webUrl);
             });
             step("Login to jenkins", () -> {
-                $("#j_username").setValue(LoadCredentialsHelper.getCredentialsFromJson("jenkins.secret", "j_username"));
-                $(byName("j_password")).setValue(LoadCredentialsHelper.getCredentialsFromJson("jenkins.secret", "j_password")).pressEnter();
+                $(byName("j_username")).val(jUserName);
+                $(byName("j_password")).val(jPassword).pressEnter();
             });
         }
     }

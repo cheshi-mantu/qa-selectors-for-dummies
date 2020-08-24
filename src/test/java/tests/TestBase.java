@@ -6,6 +6,7 @@ import helpers.Environment;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.io.File;
 
@@ -27,7 +28,6 @@ public class TestBase {
             File htmlFile = new File(Environment.url);
             htmlFilePath = htmlFile.getAbsolutePath();
         }
-
     }
     @AfterEach
     public void afterEach(){

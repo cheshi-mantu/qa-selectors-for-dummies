@@ -1,16 +1,12 @@
 package tests;
 
-import helpers.LoadCredentialsHelper;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byLinkText;
-import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.*;
 
-import static helpers.Environment.webUrl;
 import static io.qameta.allure.Allure.step;
 
 @Epic("QA selectors for dummies")

@@ -5,6 +5,7 @@ import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selenide.*;
 
 import static io.qameta.allure.Allure.step;
@@ -23,6 +24,19 @@ class QaSelectorsTests extends TestBase {
         });
         step("Check", () -> {
             $("#my_message").shouldHave(text("tag: H1"));
+        });
+    }
+    @Test
+    @DisplayName("Open page click H1")
+    void pageOpenCheckBoxClick() {
+        step ("Open html page", () -> open(htmlFilePath));
+        step("Find checkbox by ID and click it", () -> {
+            $("#enabler").click(); //   то же самое, что
+//            $(byId("enabler")).click();
+        });
+        step("Check", () -> {
+            $("#login").shouldBe(enabled);
+            $("#secret").shouldBe(enabled);
         });
     }
 }

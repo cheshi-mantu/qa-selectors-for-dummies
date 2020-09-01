@@ -49,6 +49,22 @@ a:hover {
     width: 90%;
 }
 
+.flex_goods {
+    display: inline-flex;
+    border: 1px solid greenyellow;
+    width: 90%;
+}
+
+.goods_item {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    padding: 10px;
+    border: 2px dashed blue;
+    text-align-last: center;
+    background-color: lavender;
+    margin: 10px;
+}
+
 .div_flex_inner {
     padding: 10px;
     border: 2px dashed green;

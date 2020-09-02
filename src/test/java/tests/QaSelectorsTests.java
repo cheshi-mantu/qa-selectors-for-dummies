@@ -71,4 +71,3 @@ class QaSelectorsTests extends TestBase {
         });
     }
 }
-

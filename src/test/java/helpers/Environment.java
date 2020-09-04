@@ -12,4 +12,3 @@ public class Environment {
         isRemoteDriver = remoteDriverUrl != null,
         isVideoOn = videoStorageUrl != null;
 }
-

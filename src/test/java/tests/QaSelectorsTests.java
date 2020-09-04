@@ -26,6 +26,19 @@ class QaSelectorsTests extends TestBase {
         });
     }
     @Test
+    @DisplayName("Open page click link with class equal")
+    void pageOpenAwithClassEqualClick() {
+        step ("Open html page", () -> open(htmlFilePath));
+        step("Locate link with class equal an click", () -> {
+            $(".equal").click();
+        });
+        step("Check link is clicked", () -> {
+            $("#my_message").shouldHave(text("equal"));
+        });
+    }
+
+
+    @Test
     @DisplayName("Check if login and password fields are enabled when checkbox is checked")
     void pageOpenCheckBoxClick() {
         step ("Open html page", () -> open(htmlFilePath));

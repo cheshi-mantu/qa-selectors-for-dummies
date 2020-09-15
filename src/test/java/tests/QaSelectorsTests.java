@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
@@ -37,7 +38,6 @@ class QaSelectorsTests extends TestBase {
         });
     }
 
-
     @Test
     @DisplayName("Check if login and password fields are enabled when checkbox is checked")
     void pageOpenCheckBoxClick() {
@@ -53,7 +53,8 @@ class QaSelectorsTests extends TestBase {
         });
     }
     @Test
-    @DisplayName("Pseudo code based on Allure Report steps")
+    @DisplayName("Brief description of this test")
+    @Description("Long description of this very test. Some details on what is being done")
     void pseudoOpenCheckBoxClickCheckFormFieldsEnabled() {
         step ("Open html page");
         step ("Find check box by its ID. Click ");

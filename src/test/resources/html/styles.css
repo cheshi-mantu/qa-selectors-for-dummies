@@ -107,3 +107,21 @@ a:hover {
 h1.black {
     font-style: italic;
 }
+
+.table_wrapper {
+    border: 1px solid cornflowerblue;
+    margin: 20px;
+    padding: 20px;
+}
+
+.table_row {
+    display: inline-flex;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+}
+
+.r_td {
+    text-align: center;
+    border: 1px dotted green;
+}

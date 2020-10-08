@@ -84,4 +84,20 @@ class QaSelectorsTests extends TestBase {
             $$("input").findBy(attribute("value", "Submit")).shouldBe(enabled);
         });
     }
+    @Test
+    @DisplayName("Click the button with 'Click me' text")
+    void pageOpenButtonClickMeClick() {
+        step ("Open html page", ()->{
+            open(htmlFilePath);
+        });
+        step ("Find the button with text 'Click me' and click it ", ()->{
+            $("button.button_violet_dashed").shouldHave(text("Click me")).click();
+//            $$("button").findBy(text("Click me")).click();
+        });
+        step("Check link is clicked", () -> {
+            $("#my_message").shouldHave(text("text: Click me"));
+        });
+
+
+    }
 }

@@ -84,23 +84,4 @@ class QaSelectorsTests extends TestBase {
             $$("input").findBy(attribute("value", "Submit")).shouldBe(enabled);
         });
     }
-    @Test
-    @DisplayName("Web table local test")
-    void pageOpenClickEditButtonByGivenName() {
-        step ("Open html page", ()->{
-            open(htmlFilePath);
-        });
-        step ("Получаем имя, которое найти", ()->{
-
-        });
-        step ("Найти, где он в таблице", ()->{
-
-        });
-        step ("Кликнуть на соответствующую иконку для редактирования", ()->{
-
-        });
-        step ("Проверить, что имя появляется ", ()->{
-
-        });
-    }
 }

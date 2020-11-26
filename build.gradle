@@ -49,7 +49,7 @@ allure {
 }
 
 dependencies {
-    testImplementation 'org.aspectj:aspectjweaver:1.9.5'
+    testImplementation "org.aspectj:aspectjweaver:${orgAspectjVersion}"
     testImplementation "com.codeborne:selenide:${selenideVersion}"
     testImplementation "io.qameta.allure:allure-selenide:${allureVersion}"
     testImplementation "io.qameta.allure:allure-rest-assured:${allureVersion}"

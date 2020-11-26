@@ -117,8 +117,9 @@
         </div>
 
         <div class="div_flex_inner">
+            <button type="button" onclick="whatHaveYouDone(this)">Never press this button</input>
             <button type="button" id="click_me" class="button_violet_dashed" onclick="whatHaveYouDone(this)">Click me</input>
-    </div>
+        </div>
     <div id="my_message">
         <h3>Watch here</h3>
     </div>
@@ -133,6 +134,33 @@
             <input type="submit" value="Submit" disabled>
           </form>    
           
+    </div>
+    <div class="table_wrapper"> 
+        <div class="table_row">
+            <div class="r_td">Brad</div>
+            <div class="r_td">Pitt</div>
+            <div class="r_td">Actor</div>
+            <div class="r_td">
+                <span onclick="whatHaveYouDone(this)" class="BradPitt" title="Edit"><img src="img/edit.png" width="30px"></span>
+            </div>
+        </div> 
+        <div class="table_row">
+            <div class="r_td">Rockafella</div>
+            <div class="r_td">Skunk</div><div class="r_td">song</div>            
+            <div class="r_td">
+                <span onclick="whatHaveYouDone(this)" class="RockafellaSkunk" title="Edit"><img src="img/edit.png" width="30px"></span>
+            </div>
+        </div> 
+        <div class="table_row">
+            <div class="r_td">Harry</div>
+            <div class="r_td">Potter</div>
+            <div class="r_td">idiot</div>
+            <div class="r_td">
+                <span onclick="whatHaveYouDone(this)" class="HarryPotter" title="Edit"><img src="img/edit.png" width="30px"></span>
+            </div>
+
+        </div> 
+    
     </div>
 </body>
 

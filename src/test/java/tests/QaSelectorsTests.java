@@ -63,7 +63,7 @@ class QaSelectorsTests extends TestBase {
         step ("Check if Submit button is enabled");
     }
     @Test
-    @DisplayName("Code based on Allure Report steps")
+    @DisplayName("Checkbox and button")
     void pageOpenCheckBoxClickCheckFormFieldsEnabled() {
         step ("Open html page", ()->{
             open(htmlFilePath);
@@ -97,7 +97,6 @@ class QaSelectorsTests extends TestBase {
         step("Check link is clicked", () -> {
             $("#my_message").shouldHave(text("text: Click me"));
         });
-
 
     }
 }
